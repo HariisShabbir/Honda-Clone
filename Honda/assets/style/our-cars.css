@@ -1,0 +1,260 @@
+@font-face {
+    font-family: quicksand;
+    src: url("../fonts/Quicksand-VariableFont_wght.ttf");
+  }
+*{
+    margin: 0;
+    padding: 0;
+    font-family: quicksand;
+}
+.container{
+  max-width: 1200px;
+  margin: auto;
+}
+/******* header ********/
+
+.header {
+  z-index: 3;
+  overflow: hidden;
+  width: 100%;
+  position: fixed;
+  padding: 12px;
+  top: 0;
+  background-color: white;
+  box-shadow: 0 1px 4px black;
+}
+
+.header .navbar {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .navbar .navbar-holder {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+
+.header .navbar .logo img {
+  width: 70px;
+}
+
+.header .navbar .menu ul {
+  display: flex;
+  list-style: none;
+  position: relative;
+}
+
+.header .navbar .menu ul li {
+  margin: 0 30px 0 0;
+}
+
+.header .navbar .menu ul li a {
+  text-decoration: none;
+  color: black;
+  font-family: quicksand;
+  position: relative;
+}
+
+.header .navbar .menu ul li a:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 100%;
+  height: 1px;
+  width: 0;
+  background-color: black;
+  transition: all 0.5s linear;
+}
+
+.header .navbar .menu ul li a:hover:after {
+  width: 100%;
+}
+
+.header .navbar .toggle-btn {
+  color: #c00;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none;
+  padding: 0 15px;
+}
+
+/******* header-end ********/
+.bg-img .wrapper{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.bg-img {
+  background-image: url(https://images.unsplash.com/photo-1605816988069-b11383b50717?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8aG9uZGElMjBjYXJzfGVufDB8fDB8fA%3D%3D&w=1000&q=80);
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: top center;
+}
+.bg-img .cars-table {
+  overflow-y: auto;
+  height: 600px;
+}
+.bg-img .cars-table table{
+    color: black;
+    border-collapse: collapse;
+    width: 1280px;
+    border-radius: 10px;
+    
+    background-color: white;
+}
+th:nth-child(1){
+    border-radius: 10px 0 0 0;
+}
+th:nth-child(5){
+    border-radius: 0 10px 0 0;
+}
+ tr:nth-child(even){
+    background-color: lightgray;
+    box-shadow: 0 8px 14px 0 rgb(0 0 0 / 12%), 0 2px 0px 0 rgb(0 0 0 / 17%);
+}
+.bg-img table th{
+    height: 50px;
+    color: black;
+    background-color: #c00;
+    font-weight: bold;
+
+}
+.bg-img table tr{
+    height: 38px;
+}
+.bg-img table th,td{
+    text-align: center;
+}
+.approach-us{
+  background-image: url(https://demo2.wpopal.com/autofiix/wp-content/uploads/2023/01/h2_bg-5.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 40px 0;
+}
+.approach-us .container .approach-us-holder{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.approach-us .container .approach-us-holder .block h5{
+  font-size: 18px;
+}
+.approach-us .container .approach-us-holder .block h5 span{
+  margin-left: 6px;
+}
+.approach-us .container .approach-us-holder .block h6{
+  font-size: 14px;
+}
+.approach-us .container .approach-us-holder .icon-block{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.approach-us .container .approach-us-holder .icon-block h5{
+  font-size: 18px;
+}
+.approach-us .container .approach-us-holder .icon-block h5 span{
+  margin-left: 6px;
+}
+.approach-us .container .approach-us-holder .icon-block .social-media ul{
+  display: flex;
+  margin-top: 8px;
+}
+.approach-us .container .approach-us-holder .icon-block .social-media ul li{
+  list-style: none;
+  flex-direction: row;
+  margin-right: 12px;
+  font-size: 22px;
+}
+/* footer */
+
+.footer {
+  background-color: black;
+  overflow: hidden;
+  padding: 75px 0;
+}
+#footer .container .footer-holder {
+  color: white;
+  justify-content: space-between;
+  display: flex;
+}
+.footer .block {
+  font-family: quicksand;
+  max-width: 33.3333333333%;
+  padding: 20px;
+  line-height: 30px;
+}
+.footer .block h4 {
+  font-size: 20px;
+  line-height: 25px;
+  margin-bottom: 15px;
+}
+.footer .block address {
+  font-style: inherit;
+}
+.footer .block img {
+  padding-top: 12px;
+}
+.footer .block .follow-us {
+  display: flex;
+  align-items: center;
+  width: 324px;
+}
+.footer .block .follow-us ul li {
+  list-style: none;
+  margin: 10px;
+  float: right;
+  padding-top: 18px;
+}
+.footer .block .follow-us .text {
+  padding-top: 12px;
+  margin-right: 12px;
+  font-size: 18px;
+}
+.footer .block .follow-us .icon {
+ 
+  float: right;
+  cursor: pointer;
+  font-size: 17px;
+}
+.footer .block .icon ul li i {
+  border: 2px solid #c00;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  color: #c00;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25px;
+}
+.footer .block ul li span{
+  margin-right: 2px;
+}
+.footer .block ul li{
+  list-style: none;
+}
+.footer .block ul li i{
+  margin-right: 12px;
+}
+.footer .block ul li a{
+  text-decoration: none;
+  color: white;
+  font-family: quicksand;
+  position: absolute;
+}
+@media screen and (max-width: 768px) and (min-width: 480px){
+    .bg-img .cars-table table{
+        width: 100%;
+    height: 0;
+    }
+}
+
